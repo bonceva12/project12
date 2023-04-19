@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.App {
+    min-height: 100vh;
+    width: 100vw;
+
+    .Main {
+        height: 100%;
+        width: 100%;
+
+        .characters {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 25px;
+            
+
+            .character {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                img {
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+}
